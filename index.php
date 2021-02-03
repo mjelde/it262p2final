@@ -2,7 +2,7 @@
 // variable declerations to be used by form and isset checks
 
 
-<!-- start of wrapper --> 
+
 <div id="wrapper">
     <!-- start of wrapper --><div class="form-container">
                                     <form id="temp-form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">          
