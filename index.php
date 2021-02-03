@@ -1,55 +1,6 @@
 <?php 
 // variable declerations to be used by form and isset checks
-$userInput = ''; 
-$userTemp=''; 
-$tempChangeUser=''; 
 
-$userInputErr = ''; 
-$userTempErr='';
-$err="";
-$tempChangeUserErr='';
-$convertedTemp=''; 
-
-
-if($_SERVER['REQUEST_METHOD']=='POST'){ 
-//start of check empty 
-if(empty($_POST['temperature']) || is_numeric($_POST['temperature'])== FALSE){
-    $userInputErr = 'enter a number'; 
-}else{ 
-    $userInput= $_POST['temperature'];
-}
-
-
-if(($_POST['tempTypes']=='Null')){ 
-    $userTempErr = "<p>Error, Please enter a temperature</p>"; 
-}else { 
-    $userTemp = $_POST['tempTypes'];
-}
-
-if(($_POST['tempChange']=='Null')){ 
-    $tempChangeUserErr = "<p>Error, Please enter a temperature you would like us to convert to</p>"; 
-}else { 
-    $tempChangeUser = $_POST['tempChange'];
-}
-
-} //end server
-
-
- 
-
-
-
-?> 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
-    <link rel="stylesheet" href="./css/index.css?v=<?php echo time(); ?>"> 
-</head>
-<body> 
 
 <!-- start of wrapper --> 
 <div id="wrapper">
